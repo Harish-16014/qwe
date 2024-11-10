@@ -1,0 +1,210 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 22px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  label.logo {
+    padding-left: 30px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+/* Responsive media query code for small screen */
+@media (max-width: 890px) {
+  .checkbtn {
+    display: block;
+  }
+
+  label.logo {
+    font-size: 22px;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+body{
+    background: #292929;
+}
+.photo
+{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+.photo img {
+  height: 200px;
+  margin: 10px;
+  border: 5px solid orange;
+  border-radius: 100%;
+}
+.profile_name
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.job
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+.box{
+    display: flex;
+    justify-content: center;
+   margin: auto;
+}
+.logo2{
+    padding: 10px;
+    border-radius: 100%;
+    color: black;
+    background-color: white;
+    margin-right: 10px;
+}
+.phone
+{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.edu{
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.deg
+{
+    color: white;
+    font-weight: 400;
+    margin-left: 30px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.inst
+{
+    color: white;
+    font-weight: 350;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.end
+{
+    background-color: rgb(93, 0, 255);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    border-radius: 20px 20px 0 0 ;
+}
